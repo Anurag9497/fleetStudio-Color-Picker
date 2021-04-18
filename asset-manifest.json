@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fleetStudio-Color-Picker/static/css/main.c3919cb4.chunk.css",
+    "main.js": "/fleetStudio-Color-Picker/static/js/main.35df206c.chunk.js",
+    "main.js.map": "/fleetStudio-Color-Picker/static/js/main.35df206c.chunk.js.map",
+    "runtime-main.js": "/fleetStudio-Color-Picker/static/js/runtime-main.65816b6d.js",
+    "runtime-main.js.map": "/fleetStudio-Color-Picker/static/js/runtime-main.65816b6d.js.map",
+    "static/js/2.fd9bf2e1.chunk.js": "/fleetStudio-Color-Picker/static/js/2.fd9bf2e1.chunk.js",
+    "static/js/2.fd9bf2e1.chunk.js.map": "/fleetStudio-Color-Picker/static/js/2.fd9bf2e1.chunk.js.map",
+    "static/js/3.1a5336c6.chunk.js": "/fleetStudio-Color-Picker/static/js/3.1a5336c6.chunk.js",
+    "static/js/3.1a5336c6.chunk.js.map": "/fleetStudio-Color-Picker/static/js/3.1a5336c6.chunk.js.map",
+    "index.html": "/fleetStudio-Color-Picker/index.html",
+    "static/css/main.c3919cb4.chunk.css.map": "/fleetStudio-Color-Picker/static/css/main.c3919cb4.chunk.css.map",
+    "static/js/2.fd9bf2e1.chunk.js.LICENSE.txt": "/fleetStudio-Color-Picker/static/js/2.fd9bf2e1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65816b6d.js",
+    "static/js/2.fd9bf2e1.chunk.js",
+    "static/css/main.c3919cb4.chunk.css",
+    "static/js/main.35df206c.chunk.js"
+  ]
+}
