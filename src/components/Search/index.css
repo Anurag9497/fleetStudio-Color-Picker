@@ -1,0 +1,30 @@
+#search {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+#search-input {
+    outline: none;
+    margin-right: 1em;
+    width: 300px;
+    border: 1px solid dodgerblue;
+    border-radius: 2px;
+}
+#search-input:focus {
+    border-color: red;
+}
+#search-button {
+    outline: none;
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    border-radius: 2px;
+}
+#search-button:hover {
+    border-color: red;
+    color: red;
+    cursor: pointer;
+} 

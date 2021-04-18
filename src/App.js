@@ -1,23 +1,44 @@
-import logo from './logo.svg';
+import React,{ useState } from 'react';
 import './App.css';
+import Search from './components/Search';
+import ColorCard from './components/ColorCard';
 
 function App() {
+  const [data, setData] = useState([]);
+
+  const handleColourData = (input, setInput) => {
+      fetch(`https://api.color.pizza/v1/names/${input}`)
+      .then(res => {
+        if(res.status===200)
+          return res.json();
+        else
+          throw Error('Colour Not Found !'); 
+      })
+      .then(obj => {
+          let colorArr = obj.colors.slice(0,50);
+          // console.log(colorArr);
+          setData(colorArr);
+          setInput(" ");
+      })
+      .catch(err => alert(err));
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2 id="title">Color Picker</h2>
+      <div id="display-color">
+        {
+          data.map((item, itemIndex) => {
+            return <ColorCard 
+                      key={itemIndex} 
+                      colour={{backgroundColor: item.hex}} 
+                      colourTag={item.hex}
+                      title={item.name} 
+                  />;
+          })
+        }
+      </div>
+      <Search handleColourData={handleColourData}/>
     </div>
   );
 }

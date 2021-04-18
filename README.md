@@ -1,3 +1,17 @@
+#This repo is about developing a React App named Color-Picker.
+
+#Technologies Used :- 
+    1) React JS.
+    2) Data is obtained using fetch API. (i.e, https://api.color.pizza/v1/names/${valid-color-name})
+
+#For Deploying gh-pages library is used which has following important scripts:-
+    1) "predeploy": "npm run build"
+    2) "deploy" : "gh-pages -d build"
+    3) For deploying we use command `npm run deploy` .
+
+    
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
